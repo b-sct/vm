@@ -3,7 +3,7 @@
     "archinstall-language": "English",
     "audio_config": {"audio": "pipewire"},
     "bootloader": "Grub",
-    "config_version": "0.0.2"
+    "config_version": "0.0.3"
     "debug": false,
     "disk_config": {
         "config_type": "manual_partitioning",
@@ -12,30 +12,21 @@
                 "device": "/dev/sda",
                 "partitions": [
                     {
-                        "btrfs": [],
-                        "dev_path": null,
-                        "flags": [
-                            "Boot"
-                        ],
+                        "flags": ["Boot"],
                         "fs_type": "fat32",
-                        "mount_options": [],
                         "mountpoint": "/boot",
-                        "obj_id": "2c3fa2d5-2c79-4fab-86ec-22d0ea1543c1",
                         "size": {
                             "unit": "MiB",
                             "value": 512
                         },
                         "status": "create",
                         "type": "primary"
-                    },
+                        },    
                     {
-                        "btrfs": [],
                         "flags": [],
-                        "fs_type": "ext4",
-                        "mount_options": [],
-                        "mountpoint": "/",
-                        "obj_id": "3e7018a0-363b-4d05-ab83-8e82d13db209",
-                        "size": "fill",
+                        "fs_type": "ext4", // or another filesystem of your choice
+                        "mountpoint": "/",  // assuming this is the root partition
+                        "size": "fill",     // this will use the rest of the space
                         "status": "create",
                         "type": "primary"
                     },
