@@ -1,34 +1,29 @@
 {
-    "config_version": "0.0.1",
     "additional-repositories": [],
     "archinstall-language": "English",
     "audio_config": {"audio": "pipewire"},
-    "bootloader": "Systemd-boot",
+    "bootloader": "Grub",
+    "config_version": "0.0.2"
     "debug": false,
     "disk_config": {
-        "config_type": "default_layout",
+        "config_type": "manual_partitioning",
         "device_modifications": [
             {
                 "device": "/dev/sda",
                 "partitions": [
                     {
                         "btrfs": [],
+                        "dev_path": null,
                         "flags": [
                             "Boot"
                         ],
                         "fs_type": "fat32",
-                        "size": {
-                            "sector_size": null,
-                            "unit": "MiB",
-                            "value": 512
-                        },
                         "mount_options": [],
                         "mountpoint": "/boot",
                         "obj_id": "2c3fa2d5-2c79-4fab-86ec-22d0ea1543c1",
-                        "start": {
-                            "sector_size": null,
+                        "size": {
                             "unit": "MiB",
-                            "value": 1
+                            "value": 512
                         },
                         "status": "create",
                         "type": "primary"
@@ -40,11 +35,7 @@
                         "mount_options": [],
                         "mountpoint": "/",
                         "obj_id": "3e7018a0-363b-4d05-ab83-8e82d13db209",
-                        "start": {
-                            "sector_size": null,
-                            "unit": "MiB",
-                            "value": 513
-                        },
+                        "size": "fill",
                         "status": "create",
                         "type": "primary"
                     },
@@ -75,22 +66,18 @@
     "ntp": true,
     "offline": false,
     "packages": [
-      "python3"
+        "zsh",
+        "tmux",
+        "hyperland",
+        "python3",
+        "git"
     ],
     "parallel downloads": 0,
-    "profile_config": {
-        "gfx_driver": "All open-source (default)",
-        "greeter": "sddm",
-        "profile": {
-            "details": [],
-            "main": "Desktop"
-        }
-    },
     "script": "guided",
     "silent": false,
     "swap": true,
     "sys-encoding": "utf-8",
     "sys-language": "en_US",
     "timezone": "UTC",
-    "version": "0.0.1"
+    "version": "2.7.1"
 }
