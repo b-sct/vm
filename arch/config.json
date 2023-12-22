@@ -1,33 +1,26 @@
 {
     "additional-repositories": [],
     "archinstall-language": "English",
-    "audio_config": {"audio": "pipewire"},
     "bootloader": "Grub",
-    "config_version": "0.0.3"
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "config_version": "0.0.4"
     "debug": false,
     "hostname": "a",
     "kernels": [
         "linux"
     ],
-    "keyboard-layout": "us",
-    "mirror-region": {
-        "Australia": {
-            "http://archlinux.mirror.digitalpacific.com.au/$repo/os/$arch": true,
-        }
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
     },
-    "nic": {
-        "dhcp": true,
-        "dns": null,
-        "gateway": null,
-        "iface": null,
-        "ip": null,
-        "type": "nm"
-    },
+    "network_config": {},
     "no_pkg_lookups": false,
-    "ntp": true,
+    "ntp": "true"
     "offline": false,
     "packages": [
-        "zsh",
         "tmux",
         "hyperland",
         "python3",
@@ -38,9 +31,10 @@
     "parallel downloads": 2,
     "script": "guided",
     "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
     "swap": true,
-    "sys-encoding": "utf-8",
-    "sys-language": "en_US",
-    "timezone": "UTC",
+    "timezone": "Israel",
+    "uki": false,
     "version": "2.7.1"
 }
