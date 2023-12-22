@@ -2,9 +2,6 @@
     "additional-repositories": [],
     "archinstall-language": "English",
     "bootloader": "Grub",
-    "audio_config": {
-        "audio": "pipewire"
-    },
     "debug": false,
     "hostname": "a",
     "kernels": [
@@ -15,7 +12,6 @@
         "sys_enc": "UTF-8",
         "sys_lang": "en_US"
     },
-    "network_config": {},
     "no_pkg_lookups": false,
     "ntp": true,
     "offline": false,
@@ -27,12 +23,11 @@
         "curl",
         "wget"
     ],
-    "parallel downloads": 2,
     "script": "guided",
     "silent": false,
     "skip_ntp": false,
     "skip_version_check": false,
     "swap": true,
     "timezone": "Israel",
-    "uki": false,
+    "uki": false
 }
