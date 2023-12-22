@@ -17,7 +17,7 @@
     },
     "network_config": {},
     "no_pkg_lookups": false,
-    "ntp": "true"
+    "ntp": "true",
     "offline": false,
     "packages": [
         "tmux",
