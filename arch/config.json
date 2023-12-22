@@ -5,36 +5,6 @@
     "bootloader": "Grub",
     "config_version": "0.0.3"
     "debug": false,
-    "disk_config": {
-        "config_type": "manual_partitioning",
-        "device_modifications": [
-            {
-                "device": "/dev/sda",
-                "partitions": [
-                    {
-                        "flags": ["Boot"],
-                        "fs_type": "fat32",
-                        "mountpoint": "/boot",
-                        "size": {
-                            "unit": "MiB",
-                            "value": 512
-                        },
-                        "status": "create",
-                        "type": "primary"
-                        },    
-                    {
-                        "flags": [],
-                        "fs_type": "ext4", // or another filesystem of your choice
-                        "mountpoint": "/",  // assuming this is the root partition
-                        "size": "fill",     // this will use the rest of the space
-                        "status": "create",
-                        "type": "primary"
-                    },
-                ],
-                "wipe": true
-            }
-        ]
-    },
     "hostname": "a",
     "kernels": [
         "linux"
@@ -61,9 +31,11 @@
         "tmux",
         "hyperland",
         "python3",
-        "git"
+        "git",
+        "curl",
+        "wget"
     ],
-    "parallel downloads": 0,
+    "parallel downloads": 2,
     "script": "guided",
     "silent": false,
     "swap": true,
