@@ -31,7 +31,7 @@
                 "Hyperland": {
                     "seat_access": "polkit"
                 }
-            }
+            },
             "details": [
                 "Hyperland"
             ],
