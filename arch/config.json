@@ -28,8 +28,8 @@
         "greeter": "sddm",
         "profile": {
             "custom_settings": {
-                "Hyperland": {
-                    "seat_access": "polkit"
+                "Hyprland": {
+                    "seat_access": "seatd"
                 }
             },
             "details": [
