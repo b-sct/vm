@@ -1,13 +1,10 @@
 {
-    "additional-repositories": [],
     "audio_config": {"audio": "pipewire"},
     "archinstall-language": "English",
     "bootloader": "Grub",
     "debug": false,
     "hostname": "a",
-    "kernels": [
-        "linux"
-    ],
+    "kernels": [ "linux" ],
     "locale_config": {
         "kb_layout": "us",
         "sys_enc": "UTF-8",
@@ -41,7 +38,7 @@
                 "device": "/dev/sda",
                 "partitions": [
                     {
-                        "flags": ["Boot"],
+                        "flags": [ "Boot" ],
                         "fs_type": "fat32",
                         "mountpoint": "/boot",
                         "size": {
@@ -49,7 +46,8 @@
                             "value": 512
                         },
                         "status": "create",
-                        "type": "primary"
+                        "type": "primary",
+                        "start": {}
                     },
                     {}
                 ],
