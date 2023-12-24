@@ -33,5 +33,28 @@
     "skip_version_check": false,
     "swap": true,
     "timezone": "Israel",
-    "uki": false
+    "uki": false,
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "flags": ["Boot"],
+                        "fs_type": "fat32",
+                        "mountpoint": "/boot",
+                        "size": {
+                            "unit": "MiB",
+                            "value": 512
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {}
+                ],
+                "wipe": true
+            }
+        ]
+    }
 }
