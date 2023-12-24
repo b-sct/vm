@@ -15,7 +15,6 @@
     "offline": false,
     "packages": [
         "archlinux-keyring",
-        "hyperland",
         "alacritty",
         "mlocate",
         "traceroute",
@@ -24,6 +23,21 @@
         "git",
         "wget"
     ],
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "Hyperland": {
+                    "seat_access": "polkit"
+                }
+            }
+            "details": [
+                "Hyperland"
+            ],
+            "main": "Desktop"
+        }
+    },
     "parallel downloads": 3,
     "script": "guided",
     "silent": false,
