@@ -46,7 +46,7 @@
                             "value": 512
                         },
                         "status": "create",
-                        "type": "primary",
+                        "type": "primary"
                     }
                 ],
                 "wipe": true
