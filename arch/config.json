@@ -47,9 +47,7 @@
                         },
                         "status": "create",
                         "type": "primary",
-                        "start": {}
-                    },
-                    {}
+                    }
                 ],
                 "wipe": true
             }
