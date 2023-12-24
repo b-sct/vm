@@ -1,5 +1,6 @@
 {
     "additional-repositories": [],
+    "audio_config": {"audio": "pipewire"},
     "archinstall-language": "English",
     "bootloader": "Grub",
     "debug": false,
@@ -16,13 +17,16 @@
     "ntp": true,
     "offline": false,
     "packages": [
-        "tmux",
         "hyperland",
+        "alacritty",
+        "mlocate",
+        "traceroute",
+        "tmux",
         "python3",
         "git",
-        "curl",
         "wget"
     ],
+    "parallel downloads": 3,
     "script": "guided",
     "silent": false,
     "skip_ntp": false,
