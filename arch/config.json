@@ -14,6 +14,7 @@
     "ntp": true,
     "offline": false,
     "packages": [
+        "archlinux-keyring",
         "hyperland",
         "alacritty",
         "mlocate",
