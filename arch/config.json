@@ -25,11 +25,11 @@
     ],
     "profile_config": {
         "gfx_driver": "All open-source",
-        "greeter": "sddm",
+        "greeter": "ly",
         "profile": {
             "custom_settings": {
                 "Hyprland": {
-                    "seat_access": "seatd"
+                    "seat_access": "polkitd"
                 }
             },
             "details": [
